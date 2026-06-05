@@ -1,0 +1,62 @@
+name: Backfill policy databases
+
+on:
+  workflow_dispatch:
+    inputs:
+      source:
+        description: "Dataset to backfill"
+        required: true
+        default: "gov-policy"
+        type: choice
+        options:
+          - gov-policy
+          - pboc-full
+      start_date:
+        description: "gov.cn start date, YYYY-MM-DD"
+        required: false
+        default: "2005-01-01"
+      end_date:
+        description: "gov.cn end date, YYYY-MM-DD"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install
+        run: python -m pip install -e .
+      - name: Backfill selected source
+        env:
+          SOURCE: ${{ inputs.source }}
+          START_DATE: ${{ inputs.start_date }}
+          END_DATE: ${{ inputs.end_date }}
+        run: |
+          if [ "$SOURCE" = "pboc-full" ]; then
+            python -m china_policy_db update pboc --full
+          else
+            if [ -z "$END_DATE" ]; then
+              END_DATE="$(date -u +%F)"
+            fi
+            python -m china_policy_db backfill gov-policy --start-date "$START_DATE" --end-date "$END_DATE" --max-pages-per-category 20
+          fi
+      - name: Validate
+        run: python -m china_policy_db validate
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "No data changes"
+          else
+            git commit -m "Backfill parsed policy databases"
+            git push
+          fi

@@ -1,0 +1,12 @@
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.venv/
+*.egg-info/
+build/
+dist/
+
+# Never publish raw website/API caches.
+**/raw/
+**/*.html
+tmp/
