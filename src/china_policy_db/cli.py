@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import time
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any, Iterable
@@ -126,6 +127,19 @@ def _default_date_window(days: int = 10) -> tuple[str, str]:
     return start.isoformat(), end.isoformat()
 
 
+def _gov_policy_fetcher_with_delay(delay_seconds: float) -> gov_policy.FetchJson | None:
+    if delay_seconds <= 0:
+        return None
+
+    def fetcher(params: dict[str, Any]) -> dict[str, Any]:
+        try:
+            return gov_policy._fetch_json(params)
+        finally:
+            time.sleep(delay_seconds)
+
+    return fetcher
+
+
 def _parse_date(value: str, label: str) -> date:
     try:
         return datetime.strptime(value, "%Y-%m-%d").date()
@@ -175,6 +189,7 @@ def _cmd_update_gov_policy(args: argparse.Namespace) -> int:
         max_pages_per_category=args.max_pages_per_category,
         page_size=args.page_size,
         categories=args.category,
+        fetcher=_gov_policy_fetcher_with_delay(args.request_delay_seconds),
         q=args.q,
         on_log=lambda msg: print(msg, flush=True),
     )
@@ -201,6 +216,7 @@ def _cmd_backfill_gov_policy(args: argparse.Namespace) -> int:
                 max_pages_per_category=args.max_pages_per_category,
                 page_size=args.page_size,
                 categories=args.category,
+                fetcher=_gov_policy_fetcher_with_delay(args.request_delay_seconds),
                 q=args.q,
             )
             completed.append({"start_date": start_date, "end_date": end_date, **run})
@@ -268,6 +284,7 @@ def main(argv: list[str] | None = None) -> int:
     gov_parser.add_argument("--max-pages-per-category", type=int, default=3)
     gov_parser.add_argument("--page-size", type=int, default=50)
     gov_parser.add_argument("--category", action="append", choices=sorted(gov_policy._CATEGORY_BY_ID))
+    gov_parser.add_argument("--request-delay-seconds", type=float, default=0.0)
     gov_parser.add_argument("--q", default="")
     gov_parser.set_defaults(func=_cmd_update_gov_policy)
 
@@ -285,6 +302,7 @@ def main(argv: list[str] | None = None) -> int:
     gov_backfill_parser.add_argument("--max-pages-per-category", type=int, default=20)
     gov_backfill_parser.add_argument("--page-size", type=int, default=50)
     gov_backfill_parser.add_argument("--category", action="append", choices=sorted(gov_policy._CATEGORY_BY_ID))
+    gov_backfill_parser.add_argument("--request-delay-seconds", type=float, default=0.0)
     gov_backfill_parser.add_argument("--q", default="")
     gov_backfill_parser.set_defaults(func=_cmd_backfill_gov_policy)
 

@@ -2,10 +2,10 @@
   "datasets": {
     "gov_policy": {
       "csv_path": "gov_policy/parsed/policy_documents.csv",
-      "first_pub_date": "2026-05-22",
+      "first_pub_date": "2005-01-10",
       "jsonl_path": "gov_policy/parsed/policy_documents.jsonl",
       "last_pub_date": "2026-06-03",
-      "record_count": 50
+      "record_count": 4935
     },
     "pboc_ops": {
       "csv_path": "pboc_ops/parsed/articles.csv",
@@ -15,6 +15,6 @@
       "record_count": 5130
     }
   },
-  "generated_at": "2026-06-05T05:54:43+00:00",
+  "generated_at": "2026-06-05T06:20:23+00:00",
   "schema_version": 1
 }

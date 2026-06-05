@@ -45,7 +45,7 @@ jobs:
             if [ -z "$END_DATE" ]; then
               END_DATE="$(date -u +%F)"
             fi
-            python -m china_policy_db backfill gov-policy --start-date "$START_DATE" --end-date "$END_DATE" --max-pages-per-category 20
+            python -m china_policy_db backfill gov-policy --start-date "$START_DATE" --end-date "$END_DATE" --max-pages-per-category 20 --request-delay-seconds 1.5
           fi
       - name: Validate
         run: python -m china_policy_db validate

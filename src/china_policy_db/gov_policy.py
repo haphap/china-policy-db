@@ -275,8 +275,22 @@ def parse_search_response(
     category_obj = _category_from_id(category)
     code = str(payload.get("code") or "")
     if code and code != "200":
+        msg = _normalise_text(payload.get("msg"))
+        if code == "1001" and "没有找到相关结果" in msg:
+            params = payload.get("paramsVO") or {}
+            parsed_page_size = int(params.get("n") or _DEFAULT_PAGE_SIZE)
+            return {
+                "category_id": category_obj.id,
+                "category": category_obj.name,
+                "query_t": category_obj.query_t,
+                "page": int(params.get("p") or 1),
+                "page_size": parsed_page_size,
+                "total_count": 0,
+                "total_pages": 0,
+                "records": [],
+            }
         raise DataVendorUnavailable(
-            f"gov.cn policy response code {code}: {_normalise_text(payload.get('msg'))}"
+            f"gov.cn policy response code {code}: {msg}"
         )
 
     search = payload.get("searchVO") or {}

@@ -42,7 +42,7 @@ python -m china_policy_db update gov-policy --start-date 2005-01-01 --end-date 2
 Run a multi-window gov.cn backfill:
 
 ```bash
-python -m china_policy_db backfill gov-policy --start-date 2005-01-01 --end-date 2026-06-05
+python -m china_policy_db backfill gov-policy --start-date 2005-01-01 --end-date 2026-06-05 --request-delay-seconds 1.5
 ```
 
 Run a full PBOC crawl:

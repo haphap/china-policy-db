@@ -21,7 +21,7 @@ jobs:
       - name: Update PBOC
         run: python -m china_policy_db update pboc
       - name: Update gov.cn policy
-        run: python -m china_policy_db update gov-policy
+        run: python -m china_policy_db update gov-policy --request-delay-seconds 1.5
       - name: Validate
         run: python -m china_policy_db validate
       - name: Commit changes

@@ -72,6 +72,21 @@ def test_parse_search_response_extracts_policy_fields():
     ]
 
 
+def test_parse_search_response_treats_no_results_as_empty_page():
+    parsed = gov_policy.parse_search_response(
+        {
+            "code": 1001,
+            "msg": "抱歉，没有找到相关结果",
+            "paramsVO": {"p": 1, "n": 50},
+        },
+        "gongwen",
+    )
+
+    assert parsed["total_count"] == 0
+    assert parsed["total_pages"] == 0
+    assert parsed["records"] == []
+
+
 def test_crawl_writes_raw_parsed_manifest_and_get_returns_csv(tmp_path):
     responses = {
         1: _payload([ROW_POLICY], page=1, page_size=1, total_count=2),
