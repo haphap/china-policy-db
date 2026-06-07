@@ -2,15 +2,15 @@
   "backfill_failures": [],
   "categories": {
     "bumenfile": {
-      "last_crawled_at": "2026-06-06T23:21:12+00:00",
-      "last_seen_records": 4,
+      "last_crawled_at": "2026-06-07T23:24:15+00:00",
+      "last_seen_records": 5,
       "name": "国务院部门文件",
       "query_t": "zhengcelibrary_bm",
-      "total_count": 4,
+      "total_count": 5,
       "total_pages": 1
     },
     "gongbao": {
-      "last_crawled_at": "2026-06-06T23:21:17+00:00",
+      "last_crawled_at": "2026-06-07T23:24:19+00:00",
       "last_seen_records": 10,
       "name": "国务院公报",
       "query_t": "zhengcelibrary_gb",
@@ -18,7 +18,7 @@
       "total_pages": 1
     },
     "gongwen": {
-      "last_crawled_at": "2026-06-06T23:21:10+00:00",
+      "last_crawled_at": "2026-06-07T23:24:13+00:00",
       "last_seen_records": 6,
       "name": "国务院文件",
       "query_t": "zhengcelibrary_gw",
@@ -26,11 +26,11 @@
       "total_pages": 1
     },
     "otherfile": {
-      "last_crawled_at": "2026-06-06T23:21:14+00:00",
-      "last_seen_records": 21,
+      "last_crawled_at": "2026-06-07T23:24:17+00:00",
+      "last_seen_records": 20,
       "name": "政策解读",
       "query_t": "zhengcelibrary_or",
-      "total_count": 21,
+      "total_count": 20,
       "total_pages": 1
     }
   },
@@ -43,13 +43,13 @@
     "started_at": "2026-06-05T06:21:38+00:00",
     "window_days": 31
   },
-  "last_incremental_at": "2026-06-06T23:21:17+00:00",
+  "last_incremental_at": "2026-06-07T23:24:20+00:00",
   "last_run": {
     "fetched_pages": 4,
-    "finished_at": "2026-06-06T23:21:17+00:00",
+    "finished_at": "2026-06-07T23:24:20+00:00",
     "new_records": 41,
-    "parsed_records": 35740,
-    "started_at": "2026-06-06T23:21:07+00:00"
+    "parsed_records": 35741,
+    "started_at": "2026-06-07T23:24:10+00:00"
   },
   "last_window": {
     "categories": [
@@ -58,9 +58,9 @@
       "otherfile",
       "gongbao"
     ],
-    "end_date": "2026-06-06",
+    "end_date": "2026-06-07",
     "q": "",
-    "start_date": "2026-05-27"
+    "start_date": "2026-05-28"
   },
   "records": {}
 }
