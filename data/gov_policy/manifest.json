@@ -2,15 +2,15 @@
   "backfill_failures": [],
   "categories": {
     "bumenfile": {
-      "last_crawled_at": "2026-07-01T22:49:29+00:00",
-      "last_seen_records": 7,
+      "last_crawled_at": "2026-07-02T22:45:54+00:00",
+      "last_seen_records": 9,
       "name": "国务院部门文件",
       "query_t": "zhengcelibrary_bm",
-      "total_count": 7,
+      "total_count": 9,
       "total_pages": 1
     },
     "gongbao": {
-      "last_crawled_at": "2026-07-01T22:49:35+00:00",
+      "last_crawled_at": "2026-07-02T22:46:00+00:00",
       "last_seen_records": 8,
       "name": "国务院公报",
       "query_t": "zhengcelibrary_gb",
@@ -18,19 +18,19 @@
       "total_pages": 1
     },
     "gongwen": {
-      "last_crawled_at": "2026-07-01T22:49:27+00:00",
-      "last_seen_records": 3,
+      "last_crawled_at": "2026-07-02T22:45:52+00:00",
+      "last_seen_records": 6,
       "name": "国务院文件",
       "query_t": "zhengcelibrary_gw",
-      "total_count": 3,
+      "total_count": 6,
       "total_pages": 1
     },
     "otherfile": {
-      "last_crawled_at": "2026-07-01T22:49:33+00:00",
-      "last_seen_records": 72,
+      "last_crawled_at": "2026-07-02T22:45:58+00:00",
+      "last_seen_records": 73,
       "name": "政策解读",
       "query_t": "zhengcelibrary_or",
-      "total_count": 72,
+      "total_count": 73,
       "total_pages": 2
     }
   },
@@ -43,13 +43,13 @@
     "started_at": "2026-06-05T06:21:38+00:00",
     "window_days": 31
   },
-  "last_incremental_at": "2026-07-01T22:49:36+00:00",
+  "last_incremental_at": "2026-07-02T22:46:01+00:00",
   "last_run": {
     "fetched_pages": 5,
-    "finished_at": "2026-07-01T22:49:36+00:00",
-    "new_records": 90,
-    "parsed_records": 35908,
-    "started_at": "2026-07-01T22:49:23+00:00"
+    "finished_at": "2026-07-02T22:46:01+00:00",
+    "new_records": 96,
+    "parsed_records": 35915,
+    "started_at": "2026-07-02T22:45:50+00:00"
   },
   "last_window": {
     "categories": [
@@ -58,9 +58,9 @@
       "otherfile",
       "gongbao"
     ],
-    "end_date": "2026-07-01",
+    "end_date": "2026-07-02",
     "q": "",
-    "start_date": "2026-06-21"
+    "start_date": "2026-06-22"
   },
   "records": {}
 }
