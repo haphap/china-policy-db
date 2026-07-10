@@ -2,23 +2,23 @@
   "backfill_failures": [],
   "categories": {
     "bumenfile": {
-      "last_crawled_at": "2026-07-09T23:41:51+00:00",
-      "last_seen_records": 11,
+      "last_crawled_at": "2026-07-10T23:17:15+00:00",
+      "last_seen_records": 12,
       "name": "国务院部门文件",
       "query_t": "zhengcelibrary_bm",
-      "total_count": 11,
+      "total_count": 12,
       "total_pages": 1
     },
     "gongbao": {
-      "last_crawled_at": "2026-07-09T23:41:56+00:00",
-      "last_seen_records": 8,
+      "last_crawled_at": "2026-07-10T23:17:20+00:00",
+      "last_seen_records": 18,
       "name": "国务院公报",
       "query_t": "zhengcelibrary_gb",
-      "total_count": 8,
+      "total_count": 18,
       "total_pages": 1
     },
     "gongwen": {
-      "last_crawled_at": "2026-07-09T23:41:49+00:00",
+      "last_crawled_at": "2026-07-10T23:17:13+00:00",
       "last_seen_records": 9,
       "name": "国务院文件",
       "query_t": "zhengcelibrary_gw",
@@ -26,12 +26,12 @@
       "total_pages": 1
     },
     "otherfile": {
-      "last_crawled_at": "2026-07-09T23:41:54+00:00",
-      "last_seen_records": 51,
+      "last_crawled_at": "2026-07-10T23:17:17+00:00",
+      "last_seen_records": 43,
       "name": "政策解读",
       "query_t": "zhengcelibrary_or",
-      "total_count": 51,
-      "total_pages": 2
+      "total_count": 43,
+      "total_pages": 1
     }
   },
   "last_backfill": {
@@ -43,13 +43,13 @@
     "started_at": "2026-06-05T06:21:38+00:00",
     "window_days": 31
   },
-  "last_incremental_at": "2026-07-09T23:41:57+00:00",
+  "last_incremental_at": "2026-07-10T23:17:21+00:00",
   "last_run": {
-    "fetched_pages": 5,
-    "finished_at": "2026-07-09T23:41:57+00:00",
-    "new_records": 79,
-    "parsed_records": 35953,
-    "started_at": "2026-07-09T23:41:46+00:00"
+    "fetched_pages": 4,
+    "finished_at": "2026-07-10T23:17:21+00:00",
+    "new_records": 82,
+    "parsed_records": 35974,
+    "started_at": "2026-07-10T23:17:09+00:00"
   },
   "last_window": {
     "categories": [
@@ -58,9 +58,9 @@
       "otherfile",
       "gongbao"
     ],
-    "end_date": "2026-07-09",
+    "end_date": "2026-07-10",
     "q": "",
-    "start_date": "2026-06-29"
+    "start_date": "2026-06-30"
   },
   "records": {}
 }
