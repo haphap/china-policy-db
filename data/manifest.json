@@ -4,8 +4,8 @@
       "csv_path": "gov_policy/parsed/policy_documents.csv",
       "first_pub_date": "2005-01-10",
       "jsonl_path": "gov_policy/parsed/policy_documents.jsonl",
-      "last_pub_date": "2026-08-21",
-      "record_count": 36243
+      "last_pub_date": "2026-08-22",
+      "record_count": 36245
     },
     "pboc_ops": {
       "csv_path": "pboc_ops/parsed/articles.csv",
@@ -15,6 +15,6 @@
       "record_count": 5210
     }
   },
-  "generated_at": "2026-08-21T22:46:28+00:00",
+  "generated_at": "2026-08-22T22:42:53+00:00",
   "schema_version": 1
 }
