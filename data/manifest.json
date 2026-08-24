@@ -4,17 +4,17 @@
       "csv_path": "gov_policy/parsed/policy_documents.csv",
       "first_pub_date": "2005-01-10",
       "jsonl_path": "gov_policy/parsed/policy_documents.jsonl",
-      "last_pub_date": "2026-08-22",
-      "record_count": 36245
+      "last_pub_date": "2026-08-24",
+      "record_count": 36246
     },
     "pboc_ops": {
       "csv_path": "pboc_ops/parsed/articles.csv",
       "first_pub_date": "2004-01-05",
       "jsonl_path": "pboc_ops/parsed/articles.jsonl",
-      "last_pub_date": "2026-08-21",
-      "record_count": 5210
+      "last_pub_date": "2026-08-24",
+      "record_count": 5212
     }
   },
-  "generated_at": "2026-08-23T22:43:42+00:00",
+  "generated_at": "2026-08-24T22:48:40+00:00",
   "schema_version": 1
 }
