@@ -2,7 +2,7 @@
   "backfill_failures": [],
   "categories": {
     "bumenfile": {
-      "last_crawled_at": "2026-09-03T00:21:21+00:00",
+      "last_crawled_at": "2026-09-04T00:10:58+00:00",
       "last_seen_records": 6,
       "name": "国务院部门文件",
       "query_t": "zhengcelibrary_bm",
@@ -10,7 +10,7 @@
       "total_pages": 1
     },
     "gongbao": {
-      "last_crawled_at": "2026-09-03T00:21:25+00:00",
+      "last_crawled_at": "2026-09-04T00:11:03+00:00",
       "last_seen_records": 13,
       "name": "国务院公报",
       "query_t": "zhengcelibrary_gb",
@@ -18,7 +18,7 @@
       "total_pages": 1
     },
     "gongwen": {
-      "last_crawled_at": "2026-09-03T00:21:18+00:00",
+      "last_crawled_at": "2026-09-04T00:10:56+00:00",
       "last_seen_records": 0,
       "name": "国务院文件",
       "query_t": "zhengcelibrary_gw",
@@ -26,7 +26,7 @@
       "total_pages": 1
     },
     "otherfile": {
-      "last_crawled_at": "2026-09-03T00:21:23+00:00",
+      "last_crawled_at": "2026-09-04T00:11:00+00:00",
       "last_seen_records": 18,
       "name": "政策解读",
       "query_t": "zhengcelibrary_or",
@@ -43,13 +43,13 @@
     "started_at": "2026-06-05T06:21:38+00:00",
     "window_days": 31
   },
-  "last_incremental_at": "2026-09-03T00:21:26+00:00",
+  "last_incremental_at": "2026-09-04T00:11:03+00:00",
   "last_run": {
     "fetched_pages": 4,
-    "finished_at": "2026-09-03T00:21:26+00:00",
+    "finished_at": "2026-09-04T00:11:03+00:00",
     "new_records": 37,
-    "parsed_records": 36282,
-    "started_at": "2026-09-03T00:21:16+00:00"
+    "parsed_records": 36283,
+    "started_at": "2026-09-04T00:10:53+00:00"
   },
   "last_window": {
     "categories": [
@@ -58,9 +58,9 @@
       "otherfile",
       "gongbao"
     ],
-    "end_date": "2026-09-03",
+    "end_date": "2026-09-04",
     "q": "",
-    "start_date": "2026-08-24"
+    "start_date": "2026-08-25"
   },
   "records": {}
 }
