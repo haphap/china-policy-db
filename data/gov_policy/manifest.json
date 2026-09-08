@@ -2,15 +2,15 @@
   "backfill_failures": [],
   "categories": {
     "bumenfile": {
-      "last_crawled_at": "2026-09-07T00:00:05+00:00",
-      "last_seen_records": 5,
+      "last_crawled_at": "2026-09-08T00:30:00+00:00",
+      "last_seen_records": 6,
       "name": "国务院部门文件",
       "query_t": "zhengcelibrary_bm",
-      "total_count": 5,
+      "total_count": 6,
       "total_pages": 1
     },
     "gongbao": {
-      "last_crawled_at": "2026-09-07T00:00:09+00:00",
+      "last_crawled_at": "2026-09-08T00:30:04+00:00",
       "last_seen_records": 13,
       "name": "国务院公报",
       "query_t": "zhengcelibrary_gb",
@@ -18,7 +18,7 @@
       "total_pages": 1
     },
     "gongwen": {
-      "last_crawled_at": "2026-09-07T00:00:02+00:00",
+      "last_crawled_at": "2026-09-08T00:29:57+00:00",
       "last_seen_records": 1,
       "name": "国务院文件",
       "query_t": "zhengcelibrary_gw",
@@ -26,11 +26,11 @@
       "total_pages": 1
     },
     "otherfile": {
-      "last_crawled_at": "2026-09-07T00:00:07+00:00",
-      "last_seen_records": 13,
+      "last_crawled_at": "2026-09-08T00:30:02+00:00",
+      "last_seen_records": 10,
       "name": "政策解读",
       "query_t": "zhengcelibrary_or",
-      "total_count": 13,
+      "total_count": 10,
       "total_pages": 1
     }
   },
@@ -43,13 +43,13 @@
     "started_at": "2026-06-05T06:21:38+00:00",
     "window_days": 31
   },
-  "last_incremental_at": "2026-09-07T00:00:10+00:00",
+  "last_incremental_at": "2026-09-08T00:30:05+00:00",
   "last_run": {
     "fetched_pages": 4,
-    "finished_at": "2026-09-07T00:00:10+00:00",
-    "new_records": 32,
-    "parsed_records": 36287,
-    "started_at": "2026-09-06T23:59:59+00:00"
+    "finished_at": "2026-09-08T00:30:05+00:00",
+    "new_records": 30,
+    "parsed_records": 36293,
+    "started_at": "2026-09-08T00:29:54+00:00"
   },
   "last_window": {
     "categories": [
@@ -58,9 +58,9 @@
       "otherfile",
       "gongbao"
     ],
-    "end_date": "2026-09-06",
+    "end_date": "2026-09-08",
     "q": "",
-    "start_date": "2026-08-27"
+    "start_date": "2026-08-29"
   },
   "records": {}
 }
