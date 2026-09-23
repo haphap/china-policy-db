@@ -2,7 +2,7 @@
   "backfill_failures": [],
   "categories": {
     "bumenfile": {
-      "last_crawled_at": "2026-09-22T00:55:47+00:00",
+      "last_crawled_at": "2026-09-23T00:39:32+00:00",
       "last_seen_records": 13,
       "name": "国务院部门文件",
       "query_t": "zhengcelibrary_bm",
@@ -10,7 +10,7 @@
       "total_pages": 1
     },
     "gongbao": {
-      "last_crawled_at": "2026-09-22T00:55:51+00:00",
+      "last_crawled_at": "2026-09-23T00:39:36+00:00",
       "last_seen_records": 11,
       "name": "国务院公报",
       "query_t": "zhengcelibrary_gb",
@@ -18,7 +18,7 @@
       "total_pages": 1
     },
     "gongwen": {
-      "last_crawled_at": "2026-09-22T00:55:45+00:00",
+      "last_crawled_at": "2026-09-23T00:39:30+00:00",
       "last_seen_records": 2,
       "name": "国务院文件",
       "query_t": "zhengcelibrary_gw",
@@ -26,11 +26,11 @@
       "total_pages": 1
     },
     "otherfile": {
-      "last_crawled_at": "2026-09-22T00:55:50+00:00",
-      "last_seen_records": 16,
+      "last_crawled_at": "2026-09-23T00:39:34+00:00",
+      "last_seen_records": 14,
       "name": "政策解读",
       "query_t": "zhengcelibrary_or",
-      "total_count": 16,
+      "total_count": 14,
       "total_pages": 1
     }
   },
@@ -43,13 +43,13 @@
     "started_at": "2026-06-05T06:21:38+00:00",
     "window_days": 31
   },
-  "last_incremental_at": "2026-09-22T00:55:52+00:00",
+  "last_incremental_at": "2026-09-23T00:39:37+00:00",
   "last_run": {
     "fetched_pages": 4,
-    "finished_at": "2026-09-22T00:55:52+00:00",
-    "new_records": 42,
-    "parsed_records": 36354,
-    "started_at": "2026-09-22T00:55:43+00:00"
+    "finished_at": "2026-09-23T00:39:37+00:00",
+    "new_records": 40,
+    "parsed_records": 36356,
+    "started_at": "2026-09-23T00:39:27+00:00"
   },
   "last_window": {
     "categories": [
@@ -58,9 +58,9 @@
       "otherfile",
       "gongbao"
     ],
-    "end_date": "2026-09-22",
+    "end_date": "2026-09-23",
     "q": "",
-    "start_date": "2026-09-12"
+    "start_date": "2026-09-13"
   },
   "records": {}
 }
