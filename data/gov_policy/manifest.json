@@ -2,15 +2,15 @@
   "backfill_failures": [],
   "categories": {
     "bumenfile": {
-      "last_crawled_at": "2026-11-12T03:05:26+00:00",
-      "last_seen_records": 8,
+      "last_crawled_at": "2026-11-13T02:43:10+00:00",
+      "last_seen_records": 7,
       "name": "国务院部门文件",
       "query_t": "zhengcelibrary_bm",
-      "total_count": 8,
+      "total_count": 7,
       "total_pages": 1
     },
     "gongbao": {
-      "last_crawled_at": "2026-11-12T03:05:31+00:00",
+      "last_crawled_at": "2026-11-13T02:43:14+00:00",
       "last_seen_records": 8,
       "name": "国务院公报",
       "query_t": "zhengcelibrary_gb",
@@ -18,7 +18,7 @@
       "total_pages": 1
     },
     "gongwen": {
-      "last_crawled_at": "2026-11-12T03:05:24+00:00",
+      "last_crawled_at": "2026-11-13T02:43:08+00:00",
       "last_seen_records": 5,
       "name": "国务院文件",
       "query_t": "zhengcelibrary_gw",
@@ -26,11 +26,11 @@
       "total_pages": 1
     },
     "otherfile": {
-      "last_crawled_at": "2026-11-12T03:05:28+00:00",
-      "last_seen_records": 16,
+      "last_crawled_at": "2026-11-13T02:43:12+00:00",
+      "last_seen_records": 15,
       "name": "政策解读",
       "query_t": "zhengcelibrary_or",
-      "total_count": 16,
+      "total_count": 15,
       "total_pages": 1
     }
   },
@@ -43,13 +43,13 @@
     "started_at": "2026-06-05T06:21:38+00:00",
     "window_days": 31
   },
-  "last_incremental_at": "2026-11-12T03:05:31+00:00",
+  "last_incremental_at": "2026-11-13T02:43:15+00:00",
   "last_run": {
     "fetched_pages": 4,
-    "finished_at": "2026-11-12T03:05:31+00:00",
-    "new_records": 37,
+    "finished_at": "2026-11-13T02:43:15+00:00",
+    "new_records": 35,
     "parsed_records": 36499,
-    "started_at": "2026-11-12T03:05:19+00:00"
+    "started_at": "2026-11-13T02:43:05+00:00"
   },
   "last_window": {
     "categories": [
@@ -58,9 +58,9 @@
       "otherfile",
       "gongbao"
     ],
-    "end_date": "2026-11-12",
+    "end_date": "2026-11-13",
     "q": "",
-    "start_date": "2026-11-02"
+    "start_date": "2026-11-03"
   },
   "records": {}
 }
