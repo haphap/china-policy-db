@@ -11,10 +11,10 @@
       "csv_path": "pboc_ops/parsed/articles.csv",
       "first_pub_date": "2004-01-05",
       "jsonl_path": "pboc_ops/parsed/articles.jsonl",
-      "last_pub_date": "2026-11-20",
-      "record_count": 5308
+      "last_pub_date": "2026-11-23",
+      "record_count": 5309
     }
   },
-  "generated_at": "2026-11-22T02:20:48+00:00",
+  "generated_at": "2026-11-23T02:52:15+00:00",
   "schema_version": 1
 }
